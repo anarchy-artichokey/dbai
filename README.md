@@ -7,3 +7,4 @@ This Discord bot's primary function is to dispense information and random fun fa
 [ ] Meme fetcher? <br>
 [ ] Polls? <br>
 [ ] Automated Reminders? <br>
+[ ] Voice Chat Music? <br>
