@@ -3,8 +3,8 @@ This Discord bot's primary function is to dispense information and random fun fa
 <br>
 <br>
 ## Secondary Functions?
-[ ] Dice roller? <br>
-[ ] Meme fetcher? <br>
-[ ] Polls? <br>
-[ ] Automated Reminders? <br>
-[ ] Voice Chat Music? <br>
+[] Dice roller? <br>
+[] Meme fetcher? <br>
+[] Polls? <br>
+[] Automated Reminders? <br>
+[] Voice Chat Music? <br>
