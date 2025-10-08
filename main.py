@@ -1,11 +1,14 @@
 import discord
 import matplotlib
+import json
 
+def readConfig():
+    with open("./config.json") as configFile:
+        return json.load(configFile)
 
+client = discord.Client(readConfig())
 
-client = discord.Client()
-
-myGuild = discord.Object(readConfig("guildID"))
+myGuild = discord.Object()
 
 @client.event
 async def on_ready():
