@@ -2,6 +2,7 @@ import discord
 from discord import app_commands
 from matplotlib import axes
 import json
+import requests
 
 def readConfig():
     with open("./config.json") as configFile:
@@ -38,5 +39,12 @@ async def line_plot(interaction: discord.Interaction, function: str):
 @client.tree.command()
 async def ping(interaction: discord.Interaction):
     await interaction.response.send_message("pong")
+
+@client.tree.command()
+async def face(interaction: discord.Interaction):
+    face = discord.Embed()
+    face.set_image(url="https://thispersondoesnotexist.com/")
+    await interaction.response.send_message(embed=face)
+
 
 client.run(readConfig()["discord"]["api_key"])
