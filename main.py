@@ -6,7 +6,7 @@ import requests
 from pathlib import Path
 
 def readConfig():
-    with Path.open("config.json") as configFile:
+    with Path.open("./config.json") as configFile:
         return json.load(configFile)
 
 myGuild = discord.Object(readConfig()["guild"]["id"])
