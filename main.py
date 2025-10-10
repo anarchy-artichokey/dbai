@@ -6,6 +6,7 @@ import requests
 from pathlib import Path
 
 def readConfig():
+    print(f"opening {os.getcwd()}/config.json as config file")
     with Path.open("./config.json") as configFile:
         return json.load(configFile)
 
