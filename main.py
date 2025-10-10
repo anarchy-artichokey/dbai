@@ -3,9 +3,10 @@ from discord import app_commands
 from matplotlib import axes
 import json
 import requests
+from pathlib import Path
 
 def readConfig():
-    with open("./config.json") as configFile:
+    with Path.open("./config.json") as configFile:
         return json.load(configFile)
 
 myGuild = discord.Object(readConfig()["guild"]["id"])
@@ -27,6 +28,7 @@ client = myClient(intents = intents)
 
 @client.event
 async def on_ready():
+    Path.mkdir("./tmp", exist_ok=True)
     print(f'We have logged in as {client.user}')
 
 @client.tree.command()
